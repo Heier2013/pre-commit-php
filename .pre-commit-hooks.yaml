@@ -8,8 +8,8 @@
 
 - id: php-lint
   name: PHP Syntax Check (Quick)
-  description: Runs php -l on all staged files. Exits when it hits the first errored file
-  entry: php -l
+  description: Runs phpe -l on all staged files. Exits when it hits the first errored file
+  entry: phpe -l
   language: system
   files: \.php$
 
