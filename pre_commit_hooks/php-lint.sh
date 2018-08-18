@@ -56,7 +56,7 @@ echo -en "${msg_color_yellow}Begin PHP Linter ...${msg_color_none} \n"
 parse_error_count=0
 for path in ${*:$arg_lookup_start}
 do
-    php -l "$path" 1> /dev/null
+    phpe -l "$path" 1> /dev/null
     if [ $? -ne 0 ]; then
 #        echo "PHP Parse errors were detected" >&2
         parse_error_count=$[$parse_error_count +1]
